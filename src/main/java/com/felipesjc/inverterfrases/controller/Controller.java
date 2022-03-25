@@ -16,9 +16,9 @@ public class Controller {
 
 	
 	@PostMapping
-	public ResponseEntity<String> insert(@RequestBody String frase) {
-		Frase f = new Frase(frase);
-		
+	public ResponseEntity<String> insert(@RequestBody Frase frase) {
+		Frase f = new Frase();
+		f = frase;
 		return ResponseEntity.ok().body(f.inverter());
 		
 	}

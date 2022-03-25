@@ -1,15 +1,22 @@
 package com.felipesjc.inverterfrases.main;
 
-public class Frase {
+import java.io.Serializable;
+
+public class Frase implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	
-    private String frase;
+	private String frase;
     
 	
 	public Frase(String frase) {
 		super();
 		this.frase = frase;
 	}
-
+	public Frase() {
+		
+	}
+	
 	public String getFrase() {
 		return frase;
 	}
